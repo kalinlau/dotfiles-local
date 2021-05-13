@@ -6,6 +6,8 @@
 - clean: ['~', '~/.config']        
 
 - link:
+    ~/.bashrc_local_after:
+    ~/.fzf:
     ~/.gitconfig_local:
     ~/.iterm2:
     ~/.shell_local_before:
