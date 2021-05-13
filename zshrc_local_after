@@ -5,4 +5,8 @@ command -v htop &> /dev/null && alias top='htop'
 alias goproxy='export http_proxy=http://127.0.0.1:1087 https_proxy=http://127.0.0.1:1087'
 alias disproxy='unset http_proxy https_proxy'
 
+# fzf: fuzzy search
 [ -f ~/.fzf/fzf.zsh ] && source ~/.fzf/fzf.zsh
+
+# autojump
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh

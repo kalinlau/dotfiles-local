@@ -16,7 +16,7 @@
 * youtube-dl
 * tmux
 * ffmpeg
-* Imgcat: hold in iterm2
+* imgcat: hold in iterm2
 * htop
 
 ## ## QA
