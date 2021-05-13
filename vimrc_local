@@ -1,0 +1,31 @@
+
+" vimtex
+" as the author suggests, don't specify tex
+" engine in vimtex, but use:
+" 1). %!TeX program = xelatex
+" 2). make a local latexmkrc add $pdf_mode=5 (My Prefer)
+let g:tex_flavor = 'latex'
+let g:vimtex_view_method = 'skim'
+let g:vimtex_quickfix_mode=0
+set conceallevel=1
+let g:tex_conceal='abdmg'
+let g:vimtex_compiler_latexmk = {
+            \ 'build_dir' : 'build',
+            \ 'executable' : 'latexmk',
+            \ 'options' : [
+                \ '-verbose',
+                \ '-synctex=1',
+                \ '-file-line-error',
+                \ '-interaction=nonstopmode',
+                \],
+            \}
+
+" ultisnips
+" Trigger configuration. You need to change this to something other than <tab>
+" if you use one of the following:
+" " - https://github.com/Valloric/YouCompleteMe
+" " - https://github.com/nvim-lua/completion-nvim
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
