@@ -2,7 +2,7 @@
 
 # `dircolors` is specific to GNU coreutils, mac don't have.
 path_prepend "/usr/local/opt/coreutils/libexec/gnubin"
-
+path_prepend "/usr/local/opt/binutils/bin"
 path_prepend "/usr/local/opt/ncurses/bin"
 path_prepend "/usr/local/opt/ruby/bin"
 path_prepend "/usr/local/opt/sqlite/bin"
