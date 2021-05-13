@@ -3,10 +3,11 @@
 ## tools
 
 * ack
+* ag
+* coreutils
+* binutils
 * Font-hack-nerd-font
 * autojump
-* tree
-* antigen
 * Zsh
 * Tldr
 * nnn
