@@ -8,3 +8,6 @@ path_prepend "/usr/local/opt/ruby/bin"
 path_prepend "/usr/local/opt/sqlite/bin"
 
 path_prepend "${HOME}/.iterm2"
+path_prepend "/usr/local/opt/icu4c/bin"
+path_prepend "/usr/local/opt/icu4c/sbin"
+path_prepend "/usr/local/opt/m4/bin"

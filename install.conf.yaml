@@ -3,7 +3,11 @@
       create: true
       relink: true
 
-- clean: ['~', '~/.config']        
+- clean: 
+    ~/:
+      force: true
+    ~/.config:
+      recursive: true
 
 - link:
     ~/.bashrc_local_after:
@@ -14,6 +18,10 @@
     ~/.ssh/config: ssh/config
     ~/.ssh/config_local: ssh/config_local
     ~/.vimrc_local:
+    ~/.config/youtube-dl/config/youtube-dl.conf: 
+      create: true
+      path: youtube-dl.conf
+      relink: true
     ~/.zshrc_local_after:
 
 - shell:
