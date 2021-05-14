@@ -18,10 +18,7 @@
     ~/.ssh/config: ssh/config
     ~/.ssh/config_local: ssh/config_local
     ~/.vimrc_local:
-    ~/.config/youtube-dl/config/youtube-dl.conf: 
-      create: true
-      path: youtube-dl.conf
-      relink: true
+    ~/.config/youtube-dl/config: youtube-dl.conf
     ~/.zshrc_local_after:
 
 - shell:
