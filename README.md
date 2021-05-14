@@ -1,7 +1,7 @@
 # Dotfiles
 
-## tools
-
+## Useful Tools
+---
 * ack
 * ag
 * coreutils
@@ -19,7 +19,25 @@
 * imgcat: hold in iterm2
 * htop
 
-## ## QA
+## Directory Tree
+---
+/
+|
++- /usr/local
+|  |
+|  +- Homebrew
+|  |
+|  +- Minconda
+|  |
+|  +- TexLive
+|
++- ~/dotfiles
+|
++- ~/dotfiles-local
 
+* Install tools into /usr/local
+
+## Q&A
+---
 * [HOW TO ADD PATH TO $PATH](https://unix.stackexchange.com/questions/26047/how-to-correctly-add-a-path-to-path)
 
