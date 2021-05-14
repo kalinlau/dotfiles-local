@@ -5,20 +5,20 @@ This project contains mac specific dotfile configuration.
 
 * `ack`
 * `ag`
-* `coreutils`
-* `binutils`
-* `Font-hack-nerd-font`
 * `autojump`
-* `Zsh`
-* `Tldr`
+* `binutils`
+* `coreutils`
+* `ffmpeg`
+* `font-hack-nerd-font`
+* `fzf`
+* `htop`
+* `imgcat
 * `nnn`
 * `ncdu`
-* `fzf`
-* `youtube-dl`
+* `tldr`
 * `tmux`
-* `ffmpeg`
-* `imgcat
-* `htop`
+* `youtube-dl`
+* `Zsh`
 
 ## Directory Tree
 
