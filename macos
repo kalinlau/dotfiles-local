@@ -20,7 +20,7 @@ defaults write -g NSAutomaticDashSubstitutionEnabled -bool false
 defaults write -g NSAutomaticCapitalizationEnabled -bool false
 
 # normal scroll direction
-defaults write -g com.apple.swipescrolldirection -bool false
+defaults write -g com.apple.swipescrolldirection -bool true 
 
 # hide scroll bars even if an external mouse is connected
 defaults write -g AppleShowScrollBars -string "WhenScrolling"
