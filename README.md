@@ -22,6 +22,8 @@ This project contains mac specific dotfile configuration.
 
 ## Directory Tree
 ---
+
+```
 /
 |
 +- /usr/local
@@ -35,6 +37,7 @@ This project contains mac specific dotfile configuration.
 +- ~/dotfiles
 |
 +- ~/dotfiles-local
+```
 
 * Install tools into /usr/local
 
