@@ -1,4 +1,5 @@
-# Dotfiles
+# Dotfiles-local
+This project contains mac specific dotfile configuration.
 
 ## Useful Tools
 ---
