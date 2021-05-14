@@ -32,9 +32,9 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 " fzf
 set rtp+=/usr/local/opt/fzf
 
-nnoremap <Up> :m .-2<CR>
-nnoremap <Down> :m .+1<CR>
-inoremap <A-j> <Esc>:m .+1<CR>==gi
-inoremap <A-k> <Esc>:m .-2<CR>==gi
-vnoremap <Down> :m '>+1<CR>gv=gv
-vnoremap <Up> :m '<-2<CR>gv=gv
+nnoremap <C-k> :m .-2<CR>
+nnoremap <C-j> :m .+1<CR>
+inoremap <C-k> <Esc>:m .-2<CR>==gi
+inoremap <C-j> <Esc>:m .+1<CR>==gi
+vnoremap <C-k> :m '<-2<CR>gv=gv
+vnoremap <C-j> :m '>+1<CR>gv=gv
