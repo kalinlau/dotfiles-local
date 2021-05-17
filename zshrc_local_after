@@ -26,3 +26,5 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+# iTerm2 shell integration
+source ~/.iterm2/iterm2_shell_integration.zsh
