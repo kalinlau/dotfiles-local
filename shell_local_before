@@ -15,4 +15,4 @@ path_prepend "/usr/local/opt/gnu-getopt/bin"
 # Add Homebrew's unversioned python in front of system version.
 # make sure this comes in front of /usr/bin.
 # Homebrew install at /usr/local/Cellar and create link to /usr/local/opt
-[[ -d /usr/local/opt/python@3/libexec/bin ]] && path_prepend "/usr/local/opt/python@3/libexec/bin"
+#[[ -d /usr/local/opt/python@3/libexec/bin ]] && path_prepend "/usr/local/opt/python@3/libexec/bin"
