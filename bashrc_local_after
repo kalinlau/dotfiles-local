@@ -1,1 +1,1 @@
-[ -f ~/.fzf/fzf.bash ] && source ~/.fzf/fzf/bash
+[ -f ~/.fzf/fzf.bash ] && source ~/.fzf/fzf.bash
