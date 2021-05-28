@@ -15,8 +15,7 @@
     ~/.gitconfig_local:
     ~/.iterm2:
     ~/.shell_local_before:
-    ~/.ssh/config: ssh/config
-    ~/.ssh/config_local: ssh/config_local
+    ~/.ssh: 
     ~/.vimrc_local:
     ~/.config/youtube-dl/config: youtube-dl.conf
     ~/.zshrc_local_after:

@@ -7,7 +7,12 @@ Include ~/.ssh/config_extra
 Host *
     ServerAliveInterval 120
 
-Host CPU
+Host cpu
     User liujialin
     Port 11301
     HostName 192.168.67.197
+
+Host gpu
+    User liujialin
+    Port 11301
+    HostName 159.226.251.240
