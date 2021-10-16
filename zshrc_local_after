@@ -30,3 +30,6 @@ path_prepend "/usr/local/miniconda3/condabin"
 
 # iTerm2 shell integration
 source ~/.iterm2/iterm2_shell_integration.zsh
+
+# Ruby
+path_prepend "/usr/loca/opt/ruby/bin"
