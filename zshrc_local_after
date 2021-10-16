@@ -24,6 +24,8 @@ else
     fi
 fi
 unset __conda_setup
+path_prepend "/usr/local/miniconda3/bin"
+path_prepend "/usr/local/miniconda3/condabin"
 # <<< conda initialize <<<
 
 # iTerm2 shell integration
