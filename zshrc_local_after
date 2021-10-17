@@ -33,3 +33,4 @@ source ~/.iterm2/iterm2_shell_integration.zsh
 
 # Ruby
 path_prepend "/usr/loca/opt/ruby/bin"
+path_prepend "$HOME/.local/share/gem/ruby/3.0.0/bin"
