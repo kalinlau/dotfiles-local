@@ -20,7 +20,3 @@ Host *
     UseKeychain yes
     AddKeysToAgent yes
     IPQoS=throughput
-
-Host gpu
-    HostName gpu
-    User liujialin
