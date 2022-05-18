@@ -6,10 +6,10 @@ alias goproxy='export http_proxy=http://127.0.0.1:1087 https_proxy=http://127.0.
 alias disproxy='unset http_proxy https_proxy'
 
 # fzf: fuzzy search
-[ -f ~/.fzf/fzf.zsh ] && source ~/.fzf/fzf.zsh
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # autojump
-[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+[ -f /opt/homebrew/etc/profile.d/autojump.sh ] && source /opt/homebrew/etc/profile.d/autojump.sh
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!

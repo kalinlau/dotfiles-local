@@ -12,10 +12,25 @@ Host cpu
     Port 11301
     HostName 192.168.67.197
 
-Host gpu
+Host g1
     User liujialin
     Port 11301
     HostName 159.226.251.240
+
+Host g2
+    User liujialin
+    Port 55355
+    HostName 192.168.49.2
+    IdentityFile ~/.ssh/mbp14
+    IdentitiesOnly yes
+
+Host g3
+    User liujialin
+    Port 55355
+    HostName 192.168.49.3
+    IdentityFile ~/.ssh/mbp14
+    IdentitiesOnly yes
+
 Host *
     UseKeychain yes
     AddKeysToAgent yes
