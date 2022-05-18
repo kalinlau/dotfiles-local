@@ -21,17 +21,18 @@ Host g2
     User liujialin
     Port 55355
     HostName 192.168.49.2
-    IdentityFile ~/.ssh/mbp14
     IdentitiesOnly yes
+    IdentityFile ~/.ssh/mbp14
 
 Host g3
     User liujialin
     Port 55355
     HostName 192.168.49.3
-    IdentityFile ~/.ssh/mbp14
     IdentitiesOnly yes
+    IdentityFile ~/.ssh/mbp14
 
 Host *
     UseKeychain yes
     AddKeysToAgent yes
+    IdentityFile ~/.ssh/mbp14
     IPQoS=throughput
