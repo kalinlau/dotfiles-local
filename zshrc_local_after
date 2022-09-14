@@ -2,8 +2,10 @@
 command -v lsd &> /dev/null && alias ls='lsd --group-dirs first'
 command -v htop &> /dev/null && alias top='htop'
 
-alias goproxy='export http_proxy=http://127.0.0.1:1087 https_proxy=http://127.0.0.1:1087'
+alias goproxy='export http_proxy=http://127.0.0.1:7890 https_proxy=http://127.0.0.1:7890'
 alias disproxy='unset http_proxy https_proxy'
+alias python='python3'
+alias py='python'
 
 # fzf: fuzzy search
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
@@ -11,26 +13,33 @@ alias disproxy='unset http_proxy https_proxy'
 # autojump
 [ -f /opt/homebrew/etc/profile.d/autojump.sh ] && source /opt/homebrew/etc/profile.d/autojump.sh
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/usr/local/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/usr/local/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/usr/local/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/usr/local/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-path_prepend "/usr/local/miniconda3/bin"
-path_prepend "/usr/local/miniconda3/condabin"
-# <<< conda initialize <<<
-
 # iTerm2 shell integration
 source ~/.iterm2/iterm2_shell_integration.zsh
 
-# Ruby
-path_prepend "/usr/loca/opt/ruby/bin"
-path_prepend "$HOME/.local/share/gem/ruby/3.0.0/bin"
+# TexLive (MacTex) PATH configuration
+path_append "/usr/local/texlive/2022/bin/universal-darwin"
+
+# JDK 18.0.2
+# openjdk is keg-only, which means ti was not symlinked into /opt/homebrew,
+# because macOS provides similar software and installing this software in
+# parallel can cause all kinds of truble.
+#
+# For compilers to find openjdk you may need to set:
+# export CPPFLAGS="-I/opt/homebrew/opt/openjdk/include"
+path_prepend "/opt/homebrew/opt/openjdk/bin"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/liujialin/opt/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/liujialin/opt/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/liujialin/opt/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/liujialin/opt/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
