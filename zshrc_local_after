@@ -4,8 +4,6 @@ command -v htop &> /dev/null && alias top='htop'
 
 alias goproxy='export http_proxy=http://127.0.0.1:7890 https_proxy=http://127.0.0.1:7890'
 alias disproxy='unset http_proxy https_proxy'
-alias python='python3'
-alias py='python'
 
 # fzf: fuzzy search
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
@@ -26,7 +24,8 @@ path_append "/usr/local/texlive/2022/bin/universal-darwin"
 #
 # For compilers to find openjdk you may need to set:
 # export CPPFLAGS="-I/opt/homebrew/opt/openjdk/include"
-path_prepend "/opt/homebrew/opt/openjdk/bin"
+path_append "/opt/homebrew/opt/openjdk/bin"
+
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -43,3 +42,22 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+# Homebrew
+# eval "$(/opt/homebrew/bin/brew shellenv)"
+export HOMEBREW_BREW_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git"
+export HOMEBREW_CORE_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git"
+
+path_append '/opt/homebrew/bin'
+path_append '/opt/homebrew/sbin'
+path_append '/usr/local/bin'
+path_append '/usr/bin'
+path_append '/usr/sbin'
+path_append '/bin'
+path_append '/sbin'
+
+# Remove Non-existed PATH,
+# put this at the end of zshrc_local_after.
+for var in $(echo $PATH |sed 's/:/\n/g')
+do
+    [ ! -d $var ] && path_remove $var
+done
