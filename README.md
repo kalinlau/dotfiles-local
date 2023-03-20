@@ -17,8 +17,8 @@ This project contains mac specific dotfile configuration.
 * `ncdu`
 * `tldr`
 * `tmux`
-* `youtube-dl`
-* `Zsh`
+* ~~`youtube-dl`~~: replaced by `yt-dlp`
+* `zsh`
 
 ## Directory Tree
 

@@ -1,6 +1,8 @@
 # alias for local mac
-command -v lsd &> /dev/null && alias ls='lsd --group-dirs first'
-command -v htop &> /dev/null && alias top='htop'
+# command -v lsd &> /dev/null && alias ls='lsd --group-dirs first'
+# command -v htop &> /dev/null && alias top='htop'
+alias ls='lsd --group-dirs first'
+alias top='htop'
 
 alias goproxy='export http_proxy=http://127.0.0.1:7890 https_proxy=http://127.0.0.1:7890'
 alias disproxy='unset http_proxy https_proxy'
@@ -42,6 +44,9 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+# Pip
+export PIP_REQUIRE_VIRTUALENV=false
+
 # Homebrew
 # eval "$(/opt/homebrew/bin/brew shellenv)"
 export HOMEBREW_BREW_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git"
@@ -55,8 +60,11 @@ path_append '/usr/sbin'
 path_append '/bin'
 path_append '/sbin'
 
+alias volt='path_prepend /Users/liujialin/Library/Python/3.9/bin'
+alias dvolt='path_remove /Users/liujialin/Library/Python/3.9/bin'
+
 # Remove Non-existed PATH,
-# put this at the end of zshrc_local_after.
+# === PUT THIS IN THE END ===
 for var in $(echo $PATH |sed 's/:/\n/g')
 do
     [ ! -d $var ] && path_remove $var
