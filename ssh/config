@@ -7,32 +7,3 @@ Include ~/.ssh/config_extra
 Host *
     ServerAliveInterval 120
 
-Host cpu
-    User liujialin
-    Port 11301
-    HostName 192.168.67.197
-
-Host g1
-    User liujialin
-    Port 11301
-    HostName 159.226.251.240
-
-Host g2
-    User liujialin
-    Port 55355
-    HostName 192.168.49.2
-    IdentitiesOnly yes
-    IdentityFile ~/.ssh/mbp14
-
-Host g3
-    User liujialin
-    Port 55355
-    HostName 192.168.49.3
-    IdentitiesOnly yes
-    IdentityFile ~/.ssh/mbp14
-
-Host *
-    UseKeychain yes
-    AddKeysToAgent yes
-    IdentityFile ~/.ssh/mbp14
-    IPQoS=throughput

@@ -4,64 +4,38 @@
 alias ls='lsd --group-dirs first'
 alias top='htop'
 
-alias goproxy='export http_proxy=http://127.0.0.1:7890 https_proxy=http://127.0.0.1:7890'
+alias goproxy='export http_proxy=http://127.0.0.1:7890 https_proxy=http://127.0.0.1:7892'
 alias disproxy='unset http_proxy https_proxy'
 
 # fzf: fuzzy search
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # autojump
-[ -f /opt/homebrew/etc/profile.d/autojump.sh ] && source /opt/homebrew/etc/profile.d/autojump.sh
+# [ -f /opt/homebrew/etc/profile.d/autojump.sh ] && source /opt/homebrew/etc/profile.d/autojump.sh
+[ -f /usr/share/autojump/autojump.sh ] && source /usr/share/autojump/autojump.sh
 
-# iTerm2 shell integration
-source ~/.iterm2/iterm2_shell_integration.zsh
+# Pip
+export PIP_REQUIRE_VIRTUALENV=false
 
-# TexLive (MacTex) PATH configuration
-path_append "/usr/local/texlive/2022/bin/universal-darwin"
-
-# JDK 18.0.2
-# openjdk is keg-only, which means ti was not symlinked into /opt/homebrew,
-# because macOS provides similar software and installing this software in
-# parallel can cause all kinds of truble.
-#
-# For compilers to find openjdk you may need to set:
-# export CPPFLAGS="-I/opt/homebrew/opt/openjdk/include"
-path_append "/opt/homebrew/opt/openjdk/bin"
-
+# Rust
+path_append "$HOME/.cargo/bin"
+source "$HOME/.cargo/env"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/liujialin/opt/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$('/home/liujialin/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/Users/liujialin/opt/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/liujialin/opt/miniconda3/etc/profile.d/conda.sh"
+    if [ -f "/home/liujialin/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/liujialin/miniconda3/etc/profile.d/conda.sh"
     else
-        export PATH="/Users/liujialin/opt/miniconda3/bin:$PATH"
+        export PATH="/home/liujialin/miniconda3/bin:$PATH"
     fi
 fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-# Pip
-export PIP_REQUIRE_VIRTUALENV=false
-
-# Homebrew
-# eval "$(/opt/homebrew/bin/brew shellenv)"
-export HOMEBREW_BREW_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git"
-export HOMEBREW_CORE_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git"
-
-path_append '/opt/homebrew/bin'
-path_append '/opt/homebrew/sbin'
-path_append '/usr/local/bin'
-path_append '/usr/bin'
-path_append '/usr/sbin'
-path_append '/bin'
-path_append '/sbin'
-
-alias volt='path_prepend /Users/liujialin/Library/Python/3.9/bin'
-alias dvolt='path_remove /Users/liujialin/Library/Python/3.9/bin'
 
 # Remove Non-existed PATH,
 # === PUT THIS IN THE END ===

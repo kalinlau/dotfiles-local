@@ -13,7 +13,6 @@
     ~/.bashrc_local_after:
     ~/.fzf:
     ~/.gitconfig_local:
-    ~/.iterm2:
     ~/.shell_local_before:
     ~/.ssh: 
     ~/.vimrc_local:
@@ -23,4 +22,3 @@
 - shell:
     - [git submodule sync --recursive, sync remote submodule config to local .gitmodules]
     - git update-submodules
-    - ./macos
