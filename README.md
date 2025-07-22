@@ -12,7 +12,6 @@ This project contains mac specific dotfile configuration.
 * `font-hack-nerd-font`
 * `fzf`
 * `htop`
-* `imgcat
 * `nnn`
 * `ncdu`
 * `tldr`
