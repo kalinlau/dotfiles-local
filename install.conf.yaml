@@ -12,6 +12,7 @@
 - link:
     ~/.bashrc_local_after:
     ~/.fzf:
+    ~/.fzfrc_local:
     ~/.gitconfig_local:
     ~/.shell_local_before:
     ~/.ssh: 
