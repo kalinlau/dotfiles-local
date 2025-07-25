@@ -14,10 +14,13 @@ Win11-Specific dotfile.
 * `htop`: a cross-platform interactive process viewer.
 * `nnn`: a full-featured terminal file manager.
 * `ncdu`: a curses-based version of the well-known 'du'.
+* `xclip`: mac-like `pbcopy`. Cmdline util for system with X11 implementation.
 * `tldr`: collaborative cheatsheets for console commands.
 * `tmux`: a terminal multiplexer.
+* `tree`: tree view directory
 * ~~`youtube-dl`~~: `yt-dlp`
 * `zsh`: a powerful and highly customizable Unix shell.
+* `vim-visual-multi`: sublime-like multi-cursor.
 
 ## Installation
 
