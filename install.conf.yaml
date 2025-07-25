@@ -18,6 +18,7 @@
     ~/.vimrc_local:
     ~/.config/youtube-dl/config: youtube-dl.conf
     ~/.zshrc_local_after:
+    ~/.pylintrc:
 
 - shell:
     - [git submodule sync --recursive, sync remote submodule config to local .gitmodules]

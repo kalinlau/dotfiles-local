@@ -1,17 +1,23 @@
-# alias for local mac
-# command -v lsd &> /dev/null && alias ls='lsd --group-dirs first'
-# command -v htop &> /dev/null && alias top='htop'
+#
+# Zsh Configuration Windows11
+# @author: LAU Kalin
+# @date: 7/25/25
+# @description: win11-oriented local confugration after general configuration.
+# @related: `~/dotfiles/zshrc`: general configuration file.
+#
+# ------------------------------------------------------------------------------
+
+# local alias
 alias ls='lsd --group-dirs first'
 alias top='htop'
-
-alias goproxy='export http_proxy=http://127.0.0.1:7890 https_proxy=http://127.0.0.1:7892'
+alias goproxy='export http_proxy=http://127.0.0.1:7892\
+    https_proxy=http://127.0.0.1:7892'
 alias disproxy='unset http_proxy https_proxy'
 
-# fzf: fuzzy search
+# fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# autojump
-# [ -f /opt/homebrew/etc/profile.d/autojump.sh ] && source /opt/homebrew/etc/profile.d/autojump.sh
+# local autojump path configuration
 [ -f /usr/share/autojump/autojump.sh ] && source /usr/share/autojump/autojump.sh
 
 # Pip
@@ -21,6 +27,18 @@ export PIP_REQUIRE_VIRTUALENV=false
 path_append "$HOME/.cargo/bin"
 source "$HOME/.cargo/env"
 
+# GnuPG
+# Specify the TTY for passphrase prompts.
+export GPG_TTY=$(tty)
+
+# Remove Non-existed PATH,
+# === PUT THIS IN THE END ===
+for var in $(echo $PATH |sed 's/:/\n/g')
+do
+    [ ! -d $var ] && path_remove $var
+done
+
+# >>>>>>>>>>>> AUTOGEN BELOW >>>>>>>>>>>>
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/home/liujialin/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
@@ -36,10 +54,3 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-
-# Remove Non-existed PATH,
-# === PUT THIS IN THE END ===
-for var in $(echo $PATH |sed 's/:/\n/g')
-do
-    [ ! -d $var ] && path_remove $var
-done
