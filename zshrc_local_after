@@ -16,10 +16,9 @@ alias disproxy='unset http_proxy https_proxy'
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-let $FZFILE=expand("~/.fzfrc_local")
-if filereadable($FZFILE)
-    source $FZFILE
-endif
+if [ -f ~/.fzfrc_local ]; then
+    source ~/.fzfrc_local
+fi
 
 # local autojump path configuration
 [ -f /usr/share/autojump/autojump.sh ] && source /usr/share/autojump/autojump.sh
