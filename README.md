@@ -1,46 +1,36 @@
 # Dotfiles-local
-This project contains mac specific dotfile configuration.
+Win11-Specific dotfile.
 
 ## Useful Tools
 
-* `ack`
-* `ag`
-* `autojump`
+* `ack`: grep-like search tool specifically optimized for searching source code.
+* `ag`: a code searching tool similar to ack, with a focus on speed.
+* `autojump`: a faster way to navigate your filesystem.
 * `binutils`
 * `coreutils`
 * `ffmpeg`
 * `font-hack-nerd-font`
-* `fzf`
-* `htop`
-* `imgcat
-* `nnn`
-* `ncdu`
-* `tldr`
-* `tmux`
-* ~~`youtube-dl`~~: replaced by `yt-dlp`
-* `zsh`
+* `fzf`: a general-purpose command-line fuzzy finder.
+* `htop`: a cross-platform interactive process viewer.
+* `nnn`: a full-featured terminal file manager.
+* `ncdu`: a curses-based version of the well-known 'du'.
+* `tldr`: collaborative cheatsheets for console commands.
+* `tmux`: a terminal multiplexer.
+* ~~`youtube-dl`~~: `yt-dlp`
+* `zsh`: a powerful and highly customizable Unix shell.
 
-## Directory Tree
+## Installation
 
-```
-/
-|
-+- /usr/local
-|  |
-|  +- Homebrew
-|  |
-|  +- Minconda
-|  |
-|  +- TexLive
-|
-+- ~/dotfiles
-|
-+- ~/dotfiles-local
-```
+- Recommended position: `~/dotfiles-local`.
+- Install tools like `ack`, `ag`, `fzf`, etc..
+- Update submodules `git submodule foreach git pull origin master`.
+- Link dotfiles `./install`
 
-* Install tools into /usr/local
+## Configuration
 
-## Q&A
+Modify `install.conf.yaml`, go check the template.
+
+## References
 
 * [HOW TO ADD PATH TO $PATH](https://unix.stackexchange.com/questions/26047/how-to-correctly-add-a-path-to-path)
 * [ZSH CONFIG FILES AND DIFFERENCE](https://unix.stackexchange.com/questions/71253/what-should-shouldnt-go-in-zshenv-zshrc-zlogin-zprofile-zlogout)
