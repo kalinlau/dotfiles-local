@@ -1,5 +1,5 @@
 Host github.com
     AddKeysToAgent yes
-    IdentityFile ~/.ssh/sshkeys/github4lau.key
+    IdentityFile ~/.ssh/sshkeys/github-laukalin24.key
     IPQoS=throughput
 
