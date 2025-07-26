@@ -15,7 +15,7 @@ Win11-specific dotfiles.
 - [ ] `ack`: grep-like search tool specifically optimized for searching source code.
 - [ ] `ag`: a code searching tool similar to ack, with a focus on speed.
 - [ ] `autojump`: a faster way to navigate your filesystem.
-- [ ] [`bat`](https://github.com/sharkdp/bat): colorful `cat` + `less`.
+- [x] [`bat`](https://github.com/sharkdp/bat): Better `cat` + `less`.
 - [ ] `binutils`
 - [ ] `coreutils`
 - [ ] [`fd`](https://github.com/sharkdp/fd): simple, fast alternative to Linux `find`.

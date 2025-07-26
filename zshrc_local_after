@@ -34,6 +34,14 @@ source "$HOME/.cargo/env"
 # Specify the TTY for passphrase prompts.
 export GPG_TTY=$(tty)
 
+# Bat
+# https://github.com/sharkdp/bat
+alias bat='bat --theme "Solarized (dark)" \
+    --style="numbers,changes,header,grid"'
+alias bf='bat --diff'
+export MANPAGER="sh -c 'sed -u -e \"s/\\x1B\[[0-9;]*m//g; s/.\\x08//g\" \
+    | bat -p -lman'"
+
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/home/liujialin/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
