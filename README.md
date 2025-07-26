@@ -1,26 +1,40 @@
+<!-- markdownlint-disable no-inline-html -->
 # Dotfiles-local
-Win11-Specific dotfile.
+
+Win11-specific dotfiles.
 
 ## Useful Tools
 
-* `ack`: grep-like search tool specifically optimized for searching source code.
-* `ag`: a code searching tool similar to ack, with a focus on speed.
-* `autojump`: a faster way to navigate your filesystem.
-* `binutils`
-* `coreutils`
-* `ffmpeg`
-* `font-hack-nerd-font`
-* `fzf`: a general-purpose command-line fuzzy finder.
-* `htop`: a cross-platform interactive process viewer.
-* `nnn`: a full-featured terminal file manager.
-* `ncdu`: a curses-based version of the well-known 'du'.
-* `xclip`: mac-like `pbcopy`. Cmdline util for system with X11 implementation.
-* `tldr`: collaborative cheatsheets for console commands.
-* `tmux`: a terminal multiplexer.
-* `tree`: tree view directory
-* ~~`youtube-dl`~~: `yt-dlp`
-* `zsh`: a powerful and highly customizable Unix shell.
-* `vim-visual-multi`: sublime-like multi-cursor.
+- editor:
+    - graphical: vscode
+    - terminal: vim
+- font: `hack-nerd-font`
+
+### Shell Utils
+
+- [ ] `ack`: grep-like search tool specifically optimized for searching source code.
+- [ ] `ag`: a code searching tool similar to ack, with a focus on speed.
+- [ ] `autojump`: a faster way to navigate your filesystem.
+- [ ] [`bat`](https://github.com/sharkdp/bat): colorful `cat` + `less`.
+- [ ] `binutils`
+- [ ] `coreutils`
+- [ ] [`fd`](https://github.com/sharkdp/fd): simple, fast alternative to Linux `find`.
+- [ ] `ffmpeg`
+- [x] [`fzf`](https://github.com/junegunn/fzf): a general-purpose command-line fuzzy finder.
+- [ ] `htop`: a cross-platform interactive process viewer.
+- [ ] `nnn`: a full-featured terminal file manager.
+- [ ] `ncdu`: a curses-based version of the well-known 'du'.
+- [ ] `xclip`: mac-like `pbcopy`. Cmdline util for system with X11 implementation.
+- [ ] `tldr`: collaborative cheatsheets for console commands.
+- [ ] `tmux`: a terminal multiplexer.
+- [ ] `tree`: tree view directory
+- [ ] ~~`youtube-dl`~~: `yt-dlp`
+- [ ] `zsh`: a powerful and highly customizable Unix shell.
+
+### Vim Plugins
+- [ ] [`vim-visual-multi`](https://github.com/mg979/vim-visual-multi): sublime-like multi-cursor.
+- [ ] [`nerdcommenter`](https://github.com/preservim/nerdcommenter): smart function commenters.
+- [x] [`easymotion`](https://github.com/easymotion/vim-easymotion): vim motion on speed.
 
 ## Installation
 
