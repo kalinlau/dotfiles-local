@@ -21,7 +21,8 @@ let g:vimtex_compiler_latexmk = {
             \}
 
 " ultisnips
-" Trigger configuration. You need to change this to something other than <tab>
+" Trigger configuration.
+" You need to change this to something other than <tab>
 " if you use one of the following:
 " " - https://github.com/Valloric/YouCompleteMe
 " " - https://github.com/nvim-lua/completion-nvim
@@ -47,47 +48,3 @@ vnoremap <up> :m '<-2<CR>gv=gv
 " latex
 set conceallevel=0
 
-" 80 column layout highlight
-highlight OverLength ctermbg=red ctermfg=white guibg=#592929
-match OverLength /\%81v.\+/
-
-" ----- Asynchronous Lint Engine -----
-" Enable linting on save (default is on-the-fly)
-" You might want to set this to 0 if you prefer only on-the-fly linting
-let g:ale_lint_on_save = 0
-
-" Set symbols for errors and warnings in the sign column
-let g:ale_sign_error = '✗'
-let g:ale_sign_warning = '⚡'
-
-" Show messages in the command line/status line
-let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
-let g:ale_echo_msg_error_str = 'Error'
-let g:ale_echo_msg_warning_str = 'Warning'
-
-" Disable completion if another completion plugin used (e.g., deoplete)
-" If you want ALE's built-in completion, set this to 1
-let g:ale_completion_enabled = 0
-
-" --- Linter Configuration ---
-
-" Configure linters per filetype
-" ALE will automatically detect and use linters if installed.
-" You can explicitly list them or let ALE discover them.
-let g:ale_linters = {
-\   'python': ['black', 'pylint'],
-\   'javascript': ['eslint'],
-\   'html': ['htmlhint'],
-\   'css': ['stylelint'],
-\}
-
-" Configure fixers (formatters) per filetype
-" These tools can automatically fix issues.
-" You can run :ALEFix to apply them.
-let g:ale_fixers = {
-\   'python': ['black'],
-\   'javascript': ['prettier', 'eslint'],
-\}
-
-" Automatically fix files on save (requires fixers configured above)
-let g:ale_fix_on_save = 0 " Set to 1 to enable auto-fixing on save
