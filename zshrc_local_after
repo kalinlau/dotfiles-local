@@ -7,40 +7,45 @@
 #
 # ------------------------------------------------------------------------------
 
-# local alias
+# --- ALIAS ---
 alias ls='lsd --group-dirs first'
 alias top='htop'
 alias goproxy='export http_proxy=http://127.0.0.1:7892\
     https_proxy=http://127.0.0.1:7892'
 alias disproxy='unset http_proxy https_proxy'
 
-# fzf
+# --- FZF ---
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 if [ -f ~/.fzfrc_local ]; then
     source ~/.fzfrc_local
 fi
 
-# local autojump path configuration
+# --- Autojump ---
 [ -f /usr/share/autojump/autojump.sh ] && source /usr/share/autojump/autojump.sh
 
-# Pip
+# --- Pip ---
 export PIP_REQUIRE_VIRTUALENV=false
 
-# Rust
+# --- Rust ---
 path_append "$HOME/.cargo/bin"
 source "$HOME/.cargo/env"
 
-# GnuPG
+# ---  GnuPG ---
 # Specify the TTY for passphrase prompts.
 export GPG_TTY=$(tty)
 
-# Bat
+# --- Bat ---
 # https://github.com/sharkdp/bat
 alias bat='bat --theme "Solarized (dark)" \
     --style="numbers,changes,header,grid"'
 alias bf='bat --diff'
 export MANPAGER="sh -c 'sed -u -e \"s/\\x1B\[[0-9;]*m//g; s/.\\x08//g\" \
     | bat -p -lman'"
+
+# --- NPM ---
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
