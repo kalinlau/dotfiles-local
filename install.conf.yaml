@@ -7,19 +7,20 @@
     ~/:
       force: true
     ~/.config:
+      force: true
       recursive: true
 
 - link:
     ~/.bashrc_local_after:
+    ~/.config/youtube-dl/config: youtube-dl.conf
     ~/.fzf:
     ~/.fzfrc_local:
     ~/.gitconfig_local:
+    ~/.pylintrc:
     ~/.shell_local_before:
     ~/.ssh: 
     ~/.vimrc_local:
-    ~/.config/youtube-dl/config: youtube-dl.conf
     ~/.zshrc_local_after:
-    ~/.pylintrc:
 
 - shell:
     - [git submodule sync --recursive, sync remote submodule config to local .gitmodules]

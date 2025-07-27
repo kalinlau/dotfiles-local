@@ -33,10 +33,10 @@ Win11-specific dotfiles.
 
 ### Vim Plugins
 - [?] [`webapi-vim`](https://github.com/mattn/webapi-vim): an interface to WEB APIs.
-- [ ] [`vimtex`](): .
+- [x] [`vim-tmux`](https://github.com/tmux-plugins/vim-tmux): vim plugin for `.tmux.conf`.
 - [ ] [`vim-vagrant`](): .
 - [ ] [`vim-toml`](): .
-- [ ] [`vim-tmux`](): .
+- [x] [`vimtex`](https://github.com/lervag/vimtex): .
 - [ ] [`vim-surround`](): .
 - [ ] [`vim-solidity`](): .
 - [ ] [`vim-snippets`](): .
