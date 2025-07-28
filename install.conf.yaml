@@ -12,6 +12,7 @@
 
 - link:
     ~/.bashrc_local_after:
+    ~/.config/markdownlint/markdownlintrc:
     ~/.config/youtube-dl/config: youtube-dl.conf
     ~/.config/vale/.vale.ini:
     ~/.fzf:
