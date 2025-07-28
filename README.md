@@ -32,61 +32,13 @@ Win11-specific dotfiles.
 - [ ] `zsh`: a powerful and highly customizable Unix shell.
 
 ### Vim Plugins
+- [x] [`ale`](https://github.com/dense-analysis/ale.git): Check syntax asynchronously and fix files, with Language Server Protocol (LSP) support
 - [?] [`webapi-vim`](https://github.com/mattn/webapi-vim): an interface to WEB APIs.
 - [x] [`vim-tmux`](https://github.com/tmux-plugins/vim-tmux): vim plugin for `.tmux.conf`.
-- [ ] [`vim-vagrant`](): .
-- [ ] [`vim-toml`](): .
 - [x] [`vimtex`](https://github.com/lervag/vimtex): .
-- [ ] [`vim-surround`](): .
-- [ ] [`vim-solidity`](): .
-- [ ] [`vim-snippets`](): .
-- [ ] [`vim-signature`](): .
-- [ ] [`vim-scala`](): .
-- [ ] [`vim-racket`](): .
-- [ ] [`ack.vim`]:
-- [ ] [`ctrlp.vim`]:
-- [ ] [`editorconfig-vim`]:
-- [ ] [`gist-vim`]:
-- [ ] [`gundo.vim`]:
-- [ ] [`haskell-vim`]:
-- [ ] [`incsearch-easymotion.vim`]:
-- [ ] [`incsearch.vim`]:
-- [ ] [`lightline.vim`]:
 - [x] [`nerdcommenter`](https://github.com/preservim/nerdcommenter): smart function commenters.
-- [ ] [`nerdtree`]:
-- [ ] [`rust.vim`]:
-- [ ] [`smarty.vim`]:
-- [ ] [`supertab`]:
-- [ ] [`syntastic`]:
-- [ ] [`typescript-vim`]:
-- [ ] [`ultisnips`]:
-- [ ] [`vim-argwrap`]:
-- [ ] [`vim-buffergator`]:
-- [ ] [`vim-bundler`]:
-- [ ] [`vim-coffee-script`]:
-- [ ] [`vim-colors-solarized`]:
 - [x] [`vim-easymotion`](https://github.com/easymotion/vim-easymotion): vim motion on speed.
-- [ ] [`vim-git`]:
-- [ ] [`vim-javascript`]:
-- [ ] [`vim-js`]:
-- [ ] [`vim-json`]:
-- [ ] [`vim-jsx-pretty`]:
-- [ ] [`vim-liquid`]:
-- [ ] [`vim-markdown`]:
-- [ ] [`vim-over`]:
-- [ ] [`vim-racket`]:
-- [ ] [`vim-scala`]:
-- [ ] [`vim-signature`]:
-- [ ] [`vim-smt2`]:
-- [ ] [`vim-snippets`]:
-- [ ] [`vim-solidity`]:
-- [ ] [`vim-surround`]:
-- [ ] [`vim-tmux`]:
-- [ ] [`vim-toml`]:
-- [ ] [`vim-vagrant`]:
-- [ ] [`vim-visual-multi`](https://github.com/mg979/vim-visual-multi): sublime-like multi-cursor.
-- [ ] [`vimtex`]:
-- [ ] [`webapi-vim`]:
+- [x] [`vim-visual-multi`](https://github.com/mg979/vim-visual-multi): sublime-like multi-cursor.
 
 
 ## Installation
