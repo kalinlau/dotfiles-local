@@ -13,6 +13,7 @@
 - link:
     ~/.bashrc_local_after:
     ~/.config/youtube-dl/config: youtube-dl.conf
+    ~/.config/vale/.vale.ini:
     ~/.fzf:
     ~/.fzfrc_local:
     ~/.gitconfig_local:

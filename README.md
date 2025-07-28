@@ -1,4 +1,3 @@
-<!-- markdownlint-disable no-inline-html -->
 # Dotfiles-local
 
 Win11-specific dotfiles.
@@ -22,12 +21,13 @@ Win11-specific dotfiles.
 - [ ] `ffmpeg`
 - [x] [`fzf`](https://github.com/junegunn/fzf): a command-line fuzzy finder.
 - [ ] `htop`: a cross-platform interactive process viewer.
-- [ ] `nnn`: a full-featured terminal file manager.
 - [ ] `ncdu`: a curses-based version of the well-known 'du'.
-- [ ] `xclip`: MAC-Like `pbcopy`. Cmdline util for system with X11 implementation.
+- [ ] `nnn`: a full-featured terminal file manager.
 - [ ] `tldr`: collaborative cheatsheets for console commands.
 - [ ] `tmux`: a terminal multiplexer.
 - [ ] `tree`: tree view directory
+- [ ] [`vale`](https://github.com/errata-ai/vale.git): cmdline that brings code-like linting to prose.
+- [ ] `xclip`: MAC-Like `pbcopy` for system with X11 implementation.
 - [ ] ~~`youtube-dl`~~: `yt-dlp`
 - [ ] `zsh`: a powerful and highly customizable Unix shell.
 
