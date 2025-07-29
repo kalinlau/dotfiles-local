@@ -20,7 +20,7 @@ let g:vimtex_compiler_latexmk = {
             \}
 
 " line moving up/down.
-" Notice on mac:
+" notice on mac:
 "    <A-k> ==> ˚
 "    <A-j> ==> ∆
 nnoremap <A-down> :m .+1<CR>==
@@ -33,3 +33,26 @@ vnoremap <A-up> :m '<-2<CR>gv=gv
 " latex
 set conceallevel=0
 
+" --- cursor shape ---
+" Only apply if running in a terminal (not GUI)
+if !has("gui_running")
+
+  " Normal Mode: Steady Block Cursor
+  " t_EI: Terminal End Insert (when leaving Insert or Replace mode, returning to Normal)
+  let &t_EI = "\e[2 q"
+
+  " Insert Mode: Blinking Vertical Bar (I-beam)
+  " t_SI: Terminal Start Insert (when entering Insert mode)
+  let &t_SI = "\e[5 q"
+
+  " Replace Mode: Steady Underline Cursor
+  " t_SR: Terminal Start Replace (when entering Replace mode)
+  let &t_SR = "\e[4 q"
+
+  " Optional: Set cursor when Vim starts (t_ti) and exits (t_te)
+  " This ensures your terminal cursor is set correctly when Vim launches
+  " and restored when it quits. Use .= to append to existing values.
+  let &t_ti .= "\e[2 q" " Set to steady block when Vim starts
+  let &t_te .= "\e[0 q" " Restore to blinking block (terminal default) when Vim exits
+
+endif

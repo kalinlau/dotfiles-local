@@ -35,6 +35,7 @@ Win11-specific dotfiles.
 
 ### Vim Plugins
 
+- [x] [`ack-vim`](https://github.com/mileszs/ack.vim.git): ack in vim.
 - [x] [`ale`](https://github.com/dense-analysis/ale.git): check and fix syntax asynchronously.
   - [x] Python: `yapf` + `pylint`.
   - [x] Markdown: `prettier` + `markdownlint`.
@@ -45,6 +46,10 @@ Win11-specific dotfiles.
 - [x] [`vim-easymotion`](https://github.com/easymotion/vim-easymotion): vim motion on speed.
 - [x] [`vim-over`](https://github.com/osyo-manga/vim-over.git): substitute preview.
 - [x] [`vim-visual-multi`](https://github.com/mg979/vim-visual-multi): sublime-like multi-cursor.
+<!-- Snippet Plugins -->
+- [x] [`emmet-vim`](https://github.com/mattn/emmet-vim.git): snippet for html,css.
+- [x] [`UltiSnips`](https://github.com/SirVer/ultisnips.git): general snippets.
+- [x] [`vim-snippet`](https://github.com/honza/vim-snippets.git): community-maintained snippet files.
 
 ## Installation
 
