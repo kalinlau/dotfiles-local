@@ -21,8 +21,10 @@ Win11-specific dotfiles.
 - [ ] `ffmpeg`
 - [x] [`fzf`](https://github.com/junegunn/fzf): a command-line fuzzy finder.
 - [ ] `htop`: a cross-platform interactive process viewer.
+- [x] `jq`: sed for JSON data.
 - [ ] `ncdu`: a curses-based version of the well-known 'du'.
 - [ ] `nnn`: a full-featured terminal file manager.
+- [x] `prettier`: formatter (fixer) for markdown, json, js, etc..
 - [ ] `tldr`: collaborative cheatsheets for console commands.
 - [ ] `tmux`: a terminal multiplexer.
 - [ ] `tree`: tree view directory
@@ -41,6 +43,7 @@ Win11-specific dotfiles.
 - [x] [`vimtex`](https://github.com/lervag/vimtex):
 - [x] [`nerdcommenter`](https://github.com/preservim/nerdcommenter): smart function commenters.
 - [x] [`vim-easymotion`](https://github.com/easymotion/vim-easymotion): vim motion on speed.
+- [x] [`vim-over`](https://github.com/osyo-manga/vim-over.git): substitute preview.
 - [x] [`vim-visual-multi`](https://github.com/mg979/vim-visual-multi): sublime-like multi-cursor.
 
 ## Installation

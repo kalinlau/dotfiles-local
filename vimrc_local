@@ -1,4 +1,3 @@
-
 " vimtex
 " as the author suggests, don't specify tex
 " engine in vimtex, but use:
@@ -20,30 +19,16 @@ let g:vimtex_compiler_latexmk = {
                 \],
             \}
 
-" ultisnips
-" Trigger configuration.
-" You need to change this to something other than <tab>
-" if you use one of the following:
-" " - https://github.com/Valloric/YouCompleteMe
-" " - https://github.com/nvim-lua/completion-nvim
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
-
-" fzf
-set rtp+=/opt/homebrew/opt/fzf
-
-" move up/down line keybindings.
+" line moving up/down.
 " Notice on mac:
 "    <A-k> ==> ˚
 "    <A-j> ==> ∆
-
-nnoremap <down> :m .+1<CR>==
-nnoremap <up> :m .-2<CR>==
-inoremap <down> <Esc>:m .+1<CR>==gi
-inoremap <up> <Esc>:m .-2<CR>==gi
-vnoremap <down> :m '>+1<CR>gv=gv
-vnoremap <up> :m '<-2<CR>gv=gv
+nnoremap <A-down> :m .+1<CR>==
+nnoremap <A-up> :m .-2<CR>==
+inoremap <A-down> <Esc>:m .+1<CR>==gi
+inoremap <A-up> <Esc>:m .-2<CR>==gi
+vnoremap <A-down> :m '>+1<CR>gv=gv
+vnoremap <A-up> :m '<-2<CR>gv=gv
 
 " latex
 set conceallevel=0
