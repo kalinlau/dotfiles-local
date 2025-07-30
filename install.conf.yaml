@@ -15,8 +15,6 @@
     ~/.config/markdownlint/markdownlintrc:
     ~/.config/youtube-dl/config: youtube-dl.conf
     ~/.config/vale/.vale.ini:
-    ~/.fzf:
-    ~/.fzfrc_local:
     ~/.gitconfig_local:
     ~/.pylintrc:
     ~/.shell_local_before:
