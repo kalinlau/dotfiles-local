@@ -13,6 +13,7 @@ alias top='htop'
 alias goproxy='export http_proxy=http://127.0.0.1:7892\
     https_proxy=http://127.0.0.1:7892'
 alias disproxy='unset http_proxy https_proxy'
+alias clipboard='xclip -selection clipboard'
 
 # --- Autojump ---
 [ -f /usr/share/autojump/autojump.sh ] && source /usr/share/autojump/autojump.sh
