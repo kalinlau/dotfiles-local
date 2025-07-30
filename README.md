@@ -39,6 +39,9 @@ Win11-specific dotfiles.
 - [x] [`ale`](https://github.com/dense-analysis/ale.git): check and fix syntax asynchronously.
   - [x] Python: `yapf` + `pylint`.
   - [x] Markdown: `prettier` + `markdownlint`.
+- [x] fuzzy finder:
+  - [x] [`ctrlp`](https://github.com/ctrlpvim/ctrlp.vim.git): pure-vimscript fzf.
+  - [x] [`fzf-vim`](https://github.com/junegunn/fzf.vim.git): fzf-plugin for vim.
 - [?] [`webapi-vim`](https://github.com/mattn/webapi-vim): an interface to WEB APIs.
 - [x] [`vim-tmux`](https://github.com/tmux-plugins/vim-tmux): vim plugin for `.tmux.conf`.
 - [x] [`vimtex`](https://github.com/lervag/vimtex):
