@@ -4,15 +4,32 @@ Win11-specific dotfiles.
 
 ## Useful Tools
 
-- editor:
-  - graphical: vscode
-  - terminal: vim
-- font: `hack-nerd-font`
+- Master Sword:
+  - Display: `lsd` + `hack-nerd-font`.
+  - Editor:
+    - graphical: `vscode`.
+    - terminal: `vim`.
+  - Git: version control system, `git`.
+  - GnuPG: signature and encryption, `gpg`.
+  - Multiplexer: `tmux`.
+  - Regular expression
+  - Zsh
+- Royal Guard's Claymore:
+  - `htop`
+  - `tldr`: helpages for command tools.
+  - `xlip`: copy STDOUT to system's clipboard.
+- Royal Claymore:
+- Knight's Claymore:
+- Ancient Bladewas:
+- Great Flameblade:
+- Great Thunderblade:
+- Great Frostblade:
 
 ### Shell Utils
 
-- [ ] `ack`: GREP-Like search tool optimized for source code.
-- [ ] `ag`: a code searching tool similar to ack, with a focus on speed.
+- [x] content-search tools
+  - [x] `ack`: GREP-Like search tool optimized for source code.
+  - [x] `ag`: a code searching tool similar to ack, with a focus on speed.
 - [ ] `autojump`: a faster way to navigate your filesystem.
 - [x] [`bat`](https://github.com/sharkdp/bat): Better `cat` + `less`.
 - [ ] `binutils`

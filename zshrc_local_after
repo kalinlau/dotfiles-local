@@ -7,7 +7,9 @@
 #
 # ------------------------------------------------------------------------------
 
-# --- ALIAS ---
+# ----------------
+#   Alias
+# ----------------
 alias ls='lsd --group-dirs first'
 alias top='htop'
 alias goproxy='export http_proxy=http://127.0.0.1:7892\
@@ -15,10 +17,41 @@ alias goproxy='export http_proxy=http://127.0.0.1:7892\
 alias disproxy='unset http_proxy https_proxy'
 alias clipboard='xclip -selection clipboard'
 
-# --- Autojump ---
+# ----------------
+#   Misc
+# ----------------
+
+# Define cursor escape sequences
+cursor_block='\e[1 q' # Steady block cursor
+cursor_beam='\e[5 q'  # Steady beam cursor (bar)
+
+# Function to change cursor shape based on keymap
+function zle-keymap-select {
+  if [[ ${KEYMAP} == vicmd ]]; then
+    echo -ne $cursor_block # Normal mode (vicmd)
+  elif [[ ${KEYMAP} == main ]] || [[ ${KEYMAP} == viins ]]; then
+    echo -ne $cursor_beam # Insert mode (main or viins)
+  fi
+}
+
+# Function to set cursor shape on line editor initialization
+function zle-line-init {
+  echo -ne $cursor_beam # Default cursor shape for new prompts
+}
+
+# Bind the functions to Zsh's line editor widgets
+zle -N zle-keymap-select
+zle -N zle-line-init
+
+
+# ----------------
+#   Plugins
+# ----------------
+
+# Autojump
 [ -f /usr/share/autojump/autojump.sh ] && source /usr/share/autojump/autojump.sh
 
-# --- Bat ---
+# Bat
 # https://github.com/sharkdp/bat
 alias bat='bat --theme "Solarized (dark)" \
     --style="numbers,changes,header,grid"'
@@ -26,30 +59,30 @@ alias bat='bat --theme "Solarized (dark)" \
     export MANPAGER="sh -c 'sed -u -e \"s/\\x1B\[[0-9;]*m//g; s/.\\x08//g\" \
         | bat -p -lman'"
 
-# --- FZF ---
+# FZF
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 if [ -f ~/.fzfrc_local ]; then
     source ~/.fzfrc_local
 fi
 
-# ---  GnuPG ---
+# GnuPG
 # @description: tool for secure encryption and digital signatures.
 # Specify the TTY for passphrase prompts, needed for `git commit`
 export GPG_TTY=$(tty)
 
-# --- NPM ---
+# NPM
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
-# --- Pip ---
+# Pip
 export PIP_REQUIRE_VIRTUALENV=false
 
-# --- Rust ---
+# Rust
 path_append "$HOME/.cargo/bin"
 source "$HOME/.cargo/env"
 
-# --- Snap ---
+# Snap
 # @description: universal Linux packaging system developed by Canonical
 path_append "/snap/bin"
 
