@@ -20,6 +20,7 @@
     ~/.shell_local_before:
     ~/.ssh: 
     ~/.vimrc_local:
+    ~/.zshrc_extra:
     ~/.zshrc_local_after:
 
 - shell:
