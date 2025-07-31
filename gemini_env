@@ -1,0 +1,3 @@
+# Gemini ENV Key
+
+export GEMINI_MODEL="gemini-2.5-flash"

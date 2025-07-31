@@ -13,7 +13,9 @@
     ~/.config/markdownlint/markdownlintrc:
     ~/.config/youtube-dl/config: youtube-dl.conf
     ~/.config/vale/.vale.ini:
+    ~/.env: gemini_env
     ~/.gitconfig_local:
+    ~/.gemini/settings.json:
     ~/.pylintrc:
     ~/.shell_local_before:
     ~/.ssh:
