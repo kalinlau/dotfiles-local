@@ -86,6 +86,11 @@ source "$HOME/.cargo/env"
 # @description: universal Linux packaging system developed by Canonical
 path_append "/snap/bin"
 
+# Extra configuration out-of VCS
+if [ -f ~/.zshrc_extra ]; then
+    source ~/.zshrc_extra
+fi
+
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/home/liujialin/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
@@ -101,7 +106,7 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-# >>>>> PUT THIS IN THE END >>>>>
+# >>> PUT THIS IN THE END >>>
 for var in $(echo $PATH |sed 's/:/\n/g')
 do
     [ ! -d $var ] && path_remove $var
