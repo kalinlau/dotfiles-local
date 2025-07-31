@@ -5,7 +5,7 @@
 # @description: win11-oriented local confugration after general configuration.
 # @related: `~/dotfiles/zshrc`: general configuration file.
 #
-# ------------------------------------------------------------------------------
+# ==============================================================================
 
 # ----------------
 #   Alias
