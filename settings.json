@@ -1,5 +1,5 @@
 {
-  "selectedAuthType": "vertex-ai",
+  "selectedAuthType": "oauth-personal",
   "vimMode": true,
   "preferredEditor": "vim"
 }
