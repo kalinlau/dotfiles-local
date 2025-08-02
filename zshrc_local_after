@@ -59,12 +59,6 @@ alias bat='bat --theme "Solarized (dark)" \
     export MANPAGER="sh -c 'sed -u -e \"s/\\x1B\[[0-9;]*m//g; s/.\\x08//g\" \
         | bat -p -lman'"
 
-# FZF
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-if [ -f ~/.fzfrc_local ]; then
-    source ~/.fzfrc_local
-fi
-
 # GnuPG
 # @description: tool for secure encryption and digital signatures.
 # Specify the TTY for passphrase prompts, needed for `git commit`
