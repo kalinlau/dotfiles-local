@@ -6,7 +6,7 @@
   "semi": true,           // Print semicolons at the end of statements
   "singleQuote": true,    // Use single quotes for strings
   "trailingComma": "es5", // Print trailing commas where valid in ES5
-  "bracketSpacing": true, // Print spaces between brackets in object literals
+  "bracketSpacing": false, // Print spaces between brackets in object literals
   "arrowParens": "always",// Always include parentheses around a sole arrow function parameter
   "endOfLine": "lf",      // Line endings
   "proseWrap": "always"   // IMPORTANT for Markdown: Wrap prose text to printWidth

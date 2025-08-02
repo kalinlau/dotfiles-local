@@ -34,6 +34,7 @@ Win11-specific dotfiles.
 - [x] [`bat`](https://github.com/sharkdp/bat): Better `cat` + `less`.
 - [ ] `binutils`
 - [ ] `coreutils`
+- [x] [`delta`](https://github.com/dandavison/delta.git): syntax-highlighting pager for git, diff, and grep output.
 - [ ] [`fd`](https://github.com/sharkdp/fd): simple, fast Linux `find`.
 - [ ] `ffmpeg`
 - [x] [`fzf`](https://github.com/junegunn/fzf): a command-line fuzzy finder.
