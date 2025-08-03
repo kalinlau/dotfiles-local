@@ -10,6 +10,8 @@ Win11-specific dotfiles.
     - graphical: `vscode`.
     - terminal: `vim`.
   - Git: version control system, `git`.
+    - diff pro: `delta`
+    - tag/commit sign: `gpg`
   - GnuPG: signature and encryption, `gpg`.
   - Multiplexer: `tmux`.
   - Regular expression
@@ -34,7 +36,7 @@ Win11-specific dotfiles.
 - [x] [`bat`](https://github.com/sharkdp/bat): Better `cat` + `less`.
 - [ ] `binutils`
 - [ ] `coreutils`
-- [x] [`delta`](https://github.com/dandavison/delta.git): syntax-highlighting pager for git, diff, and grep output.
+- [x] [`delta`](https://github.com/dandavison/delta.git): pager for git, diff, and grep output.
 - [ ] [`fd`](https://github.com/sharkdp/fd): simple, fast Linux `find`.
 - [ ] `ffmpeg`
 - [x] [`fzf`](https://github.com/junegunn/fzf): a command-line fuzzy finder.
@@ -70,6 +72,7 @@ Win11-specific dotfiles.
 <!-- Snippet Plugins -->
 - [x] [`emmet-vim`](https://github.com/mattn/emmet-vim.git): snippet for html,css.
 - [x] [`UltiSnips`](https://github.com/SirVer/ultisnips.git): general snippets.
+- [x] [`vim-over`](https://github.com/osyo-manga/vim-over.git): substitute preview.
 - [x] [`vim-snippet`](https://github.com/honza/vim-snippets.git): community-maintained snippet files.
 
 ## Installation
