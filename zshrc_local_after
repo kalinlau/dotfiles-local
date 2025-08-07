@@ -17,6 +17,11 @@ alias goproxy='export http_proxy=http://127.0.0.1:7892\
 alias disproxy='unset http_proxy https_proxy'
 alias clipboard='xclip -selection clipboard'
 
+# PATH
+# add normal-mode binaries to this directory
+! [ -d ~/bin ] && mkdir ~/bin
+path_prepend "$(realpath ~/bin)"
+
 # ----------------
 #   Misc
 # ----------------

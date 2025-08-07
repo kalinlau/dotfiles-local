@@ -21,6 +21,9 @@ Win11-specific dotfiles.
   - `tldr`: helpages for command tools.
   - `xlip`: copy STDOUT to system's clipboard.
 - Royal Claymore:
+    - image / video terminal viewer:
+        - [`timg`](https://github.com/hzeller/timg.git)
+        - [`kitty`](https://sw.kovidgoyal.net/kitty/binary/)
 - Knight's Claymore:
 - Ancient Bladewas:
 - Great Flameblade:
