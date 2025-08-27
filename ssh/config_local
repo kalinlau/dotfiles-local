@@ -2,4 +2,6 @@ Host github.com
     AddKeysToAgent yes
     IdentityFile ~/keys/laukalin24@gmail-ssh.key
     IPQoS=throughput
+    Hostname ssh.github.com
+    Port 443
 
