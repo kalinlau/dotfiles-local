@@ -16,6 +16,7 @@ alias goproxy='export http_proxy=http://127.0.0.1:7892\
     https_proxy=http://127.0.0.1:7892'
 alias disproxy='unset http_proxy https_proxy'
 alias clipboard='xclip -selection clipboard'
+alias fd='fdfind'
 
 # PATH
 # add normal-mode binaries to this directory
@@ -58,7 +59,7 @@ zle -N zle-line-init
 
 # Bat
 # https://github.com/sharkdp/bat
-alias bat='bat --theme "Solarized (dark)" \
+alias bat='batcat --theme "Solarized (dark)" \
     --style="numbers,changes,header,grid"'
     alias bf='bat --diff'
     export MANPAGER="sh -c 'sed -u -e \"s/\\x1B\[[0-9;]*m//g; s/.\\x08//g\" \
@@ -89,21 +90,6 @@ path_append "/snap/bin"
 if [ -f ~/.zshrc_extra ]; then
     source ~/.zshrc_extra
 fi
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/liujialin/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/liujialin/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/liujialin/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/liujialin/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
 
 # >>> PUT THIS IN THE END >>>
 for var in $(echo $PATH |sed 's/:/\n/g')
