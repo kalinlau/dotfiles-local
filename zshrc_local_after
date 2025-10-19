@@ -55,7 +55,8 @@ zle -N zle-line-init
 # ----------------
 
 # Autojump
-[ -f /usr/share/autojump/autojump.sh ] && source /usr/share/autojump/autojump.sh
+[[ -s $HOME/.autojump/etc/profile.d/autojump.sh ]] && source $HOME/.autojump/etc/profile.d/autojump.sh
+autoload -U compinit && compinit -u
 
 # Bat
 # https://github.com/sharkdp/bat
@@ -91,8 +92,25 @@ if [ -f ~/.zshrc_extra ]; then
     source ~/.zshrc_extra
 fi
 
-# >>> PUT THIS IN THE END >>>
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/laukalin/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/laukalin/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/laukalin/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/laukalin/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+# >>> PATH MODIFICATION >>>
+# WARNING: PUT THIS IN THE END
 for var in $(echo $PATH |sed 's/:/\n/g')
 do
     [ ! -d $var ] && path_remove $var
 done
+# <<< PATH MODIFICATION END <<<
