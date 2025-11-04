@@ -62,9 +62,9 @@ autoload -U compinit && compinit -u
 # https://github.com/sharkdp/bat
 alias bat='batcat --theme "Solarized (dark)" \
     --style="numbers,changes,header,grid"'
-    alias bf='bat --diff'
-    export MANPAGER="sh -c 'sed -u -e \"s/\\x1B\[[0-9;]*m//g; s/.\\x08//g\" \
-        | bat -p -lman'"
+alias bf='batcat --diff'
+export MANPAGER="sh -c 'sed -u -e \"s/\\x1B\[[0-9;]*m//g; s/.\\x08//g\" \
+        | batcat -p -lman'"
 
 # GnuPG
 # @description: tool for secure encryption and digital signatures.
