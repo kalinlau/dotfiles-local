@@ -12,11 +12,26 @@
 # ----------------
 alias ls='lsd --group-dirs first'
 alias top='htop'
-alias goproxy='export http_proxy=http://127.0.0.1:7892\
-    https_proxy=http://127.0.0.1:7892'
-alias disproxy='unset http_proxy https_proxy'
 alias clipboard='xclip -selection clipboard'
 alias fd='fdfind'
+#
+# 开启终端代理别名
+alias setproxy="export http_proxy='http://127.0.0.1:7890' \
+                       https_proxy='http://127.0.0.1:7890' \
+                       HTTP_PROXY='http://127.0.0.1:7890' \
+                       HTTPS_PROXY='http://127.0.0.1:7890' \
+                       ALL_PROXY='socks5://127.0.0.1:7890' \
+                       && echo 'Proxy environment variables set.'"
+
+# 关闭终端代理别名
+alias unsetproxy="unset http_proxy https_proxy HTTP_PROXY HTTPS_PROXY ALL_PROXY \
+  && echo 'Proxy environment variables unset.'"
+
+# 查看当前代理状态别名
+alias checkproxy='echo "http_proxy  = ${http_proxy:-[Not Set]}"; \
+  echo "https_proxy = ${https_proxy:-[Not Set]}"; \
+  echo "ALL_PROXY   = ${ALL_PROXY:-[Not Set]}"; \
+  curl -s -m 5 https://ipinfo.io/json || echo 'Connection timed out or failed.''
 
 # PATH
 # add normal-mode binaries to this directory
@@ -128,3 +143,7 @@ fi
 if [ -f '/home/laukalin/installation/google-cloud-sdk/completion.zsh.inc' ]; then
   . '/home/laukalin/installation/google-cloud-sdk/completion.zsh.inc';
 fi
+
+# Auto Proxy
+# for antigravity cli, github, etc.
+setproxy
