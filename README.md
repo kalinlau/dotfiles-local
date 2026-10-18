@@ -2,6 +2,12 @@
 
 Win11-specific dotfiles.
 
+## Update
+
+### 26.10.18
+
+- `gh`: 可以不用配置auth token或ssh，使用`gh auth login`后直接`git push`指定的remote origin
+
 ## Useful Tools
 
 - Master Sword:
