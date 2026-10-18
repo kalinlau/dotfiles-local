@@ -69,10 +69,6 @@ zle -N zle-line-init
 #   Plugins
 # ----------------
 
-# Autojump
-[[ -s $HOME/.autojump/etc/profile.d/autojump.sh ]] && source $HOME/.autojump/etc/profile.d/autojump.sh
-autoload -U compinit && compinit -u
-
 # Bat
 # https://github.com/sharkdp/bat
 alias bat='batcat --theme "Solarized (dark)" \
@@ -105,6 +101,10 @@ path_append "/snap/bin"
 # Antigravity
 # @description: Google Agent Development Kits
 path_append "$HOME/.local/bin"
+
+# Zoxide
+# Autojump pro max: new generation
+eval "$(zoxide init zsh)"
 
 # Extra configuration out-of VCS
 if [ -f ~/.zshrc_extra ]; then

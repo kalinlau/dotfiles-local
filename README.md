@@ -35,21 +35,21 @@ Win11-specific dotfiles.
 - [x] content-search tools
   - [x] `ack`: GREP-Like search tool optimized for source code.
   - [x] `ag`: a code searching tool similar to ack, with a focus on speed.
-- [ ] `autojump`: a faster way to navigate your filesystem.
+- [x] `zoxide`: a faster way to navigate your filesystem.
 - [x] [`bat`](https://github.com/sharkdp/bat): Better `cat` + `less`.
-- [ ] `binutils`
-- [ ] `coreutils`
+- [x] `binutils`
+- [x] `coreutils`
 - [x] [`delta`](https://github.com/dandavison/delta.git): pager for git, diff, and grep output.
-- [ ] [`fd`](https://github.com/sharkdp/fd): simple, fast Linux `find`.
-- [ ] `ffmpeg`
+- [x] [`fd`](https://github.com/sharkdp/fd): simple, fast Linux `find`.
+- [x] `ffmpeg`
 - [x] [`fzf`](https://github.com/junegunn/fzf): a command-line fuzzy finder.
-- [ ] `htop`: a cross-platform interactive process viewer.
+- [x] `btop`: a cross-platform interactive process viewer.
 - [x] `jq`: sed for JSON data.
-- [ ] `ncdu`: a curses-based version of the well-known 'du'.
-- [ ] `nnn`: a full-featured terminal file manager.
+- [x] `ncdu`: a curses-based version of the well-known 'du'.
+- [x] `nnn`: a full-featured terminal file manager.
 - [x] `prettier`: formatter (fixer) for markdown, json, js, etc..
-- [ ] `tldr`: collaborative cheatsheets for console commands.
-- [ ] `tmux`: a terminal multiplexer.
+- [x] `tldr`: collaborative cheatsheets for console commands.
+- [x] `tmux`: a terminal multiplexer.
 - [ ] `tree`: tree view directory
 - [ ] [`vale`](https://github.com/errata-ai/vale.git): cmdline that brings code-like linting to prose.
 - [ ] `xclip`: MAC-Like `pbcopy` for system with X11 implementation.
