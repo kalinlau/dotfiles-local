@@ -56,7 +56,7 @@ Win11-specific dotfiles.
 - [x] `prettier`: formatter (fixer) for markdown, json, js, etc..
 - [x] `tldr`: collaborative cheatsheets for console commands.
 - [x] `tmux`: a terminal multiplexer.
-- [ ] `tree`: tree view directory
+- [x] `tree`: tree view directory
 - [ ] [`vale`](https://github.com/errata-ai/vale.git): cmdline that brings code-like linting to prose.
 - [ ] `xclip`: MAC-Like `pbcopy` for system with X11 implementation.
 - [ ] ~~`youtube-dl`~~: `yt-dlp`
