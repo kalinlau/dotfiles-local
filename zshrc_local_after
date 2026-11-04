@@ -12,7 +12,7 @@
 # ----------------
 alias ls='lsd --group-dirs first'
 alias top='htop'
-alias clipboard='xclip -selection clipboard'
+alias clipboard='powershell.exe -NoProfile -Command "[Console]::InputEncoding = [System.Text.Encoding]::UTF8; Set-Clipboard -Value ([Console]::In.ReadToEnd())"'
 alias fd='fdfind'
 #
 # 开启终端代理别名
