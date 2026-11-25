@@ -80,7 +80,9 @@ export MANPAGER="sh -c 'sed -u -e \"s/\\x1B\[[0-9;]*m//g; s/.\\x08//g\" \
 # GnuPG
 # @description: tool for secure encryption and digital signatures.
 # Specify the TTY for passphrase prompts, needed for `git commit`
-export GPG_TTY=$(tty)
+if [[ -t 0 ]]; then
+  export GPG_TTY=$(tty)
+fi
 
 # NPM
 export NVM_DIR="$HOME/.nvm"
