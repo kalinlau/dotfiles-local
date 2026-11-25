@@ -144,6 +144,9 @@ if [ -f '/home/laukalin/installation/google-cloud-sdk/completion.zsh.inc' ]; the
   . '/home/laukalin/installation/google-cloud-sdk/completion.zsh.inc';
 fi
 
+# Deno for yt-dlp
+source "/home/laukalin/.deno/env"
+
 # Auto Proxy
 # for antigravity cli, github, etc.
 setproxy
